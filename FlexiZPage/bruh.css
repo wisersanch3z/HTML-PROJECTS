@@ -27,15 +27,14 @@ header h2 {
     transition: color 0.3s ease;
 }
 
-
-header a:hover{
+/*
+header .inicio:hover{
     color: #488cda;
     
 }
+*/
 
-header a span:hover{
-    color: red;
-}
+
 
 
 body {
@@ -116,6 +115,20 @@ header {
 
 /* CUADRO PROYECTOS */
 .projects {
+    clear:both;
+    display: block;
+    justify-items: center;
+    text-align: center;
+    /* justify-content:left; */
+    background-color: #3f3f3f;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    border-color:#488cda 1px;
+}
+
+.members {
     clear:both;
     display: block;
     justify-items: center;
