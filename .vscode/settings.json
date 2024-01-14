@@ -1,0 +1,7 @@
+{
+    "vscord.status.buttons.button1.active.enabled": false,
+    "vscord.status.buttons.button1.enabled": false,
+    "vscord.status.buttons.button1.git.active.enabled": false,
+    "vscord.status.state.text.viewing": "Viewing {folder_and_file}",
+    "vscord.status.state.text.editing": "Working on {folder_and_file}"
+}
