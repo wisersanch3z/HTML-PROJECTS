@@ -125,7 +125,7 @@ header {
     border-radius: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 20px;
-    border-color:#488cda 1px;
+
 }
 
 .members {
@@ -135,11 +135,13 @@ header {
     text-align: center;
     /* justify-content:left; */
     background-color: #3f3f3f;
-    padding: 15px;
+    padding: 10px;
     border-radius: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 20px;
-    border-color:#488cda 1px;
+    margin: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+ 
 }
 
 .tituloproyecto{ 
