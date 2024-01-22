@@ -4,90 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #282c35;
-            color: #fff;
-        }
-
-        .pantalla-carga {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #282c35;
-            z-index: 1000;
-        }
-
-        .carga-contenido {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .loader {
-            margin-bottom: 20px;
-            width: fit-content;
-            font-weight: bold;
-            font-family: monospace;
-            font-size: 30px;
-            color: #0000;
-            background: linear-gradient(90deg, #0077BE calc(50% + 0.5ch), #000 0) right/calc(200% + 1ch) 100%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: l7 2s infinite steps(11);
-        }
-
-        .loader:before {
-            content: "Iniciando..."
-        }
-
-        @keyframes l7 {
-            to {
-                background-position: left
-            }
-        }
-
-
-        .carga-texto {
-            font-size: 18px;
-        }
-
-        .contenido-principal {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .contenido-interno {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            text-align: center;
-        }
-
-        h1,
-        h2 {
-            color: #61dafb;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/deco.css">
+    <title>Wiser Personal Page</title>
+  
 </head>
 
 <body>
 
-    <!-- Pantalla de carga -->
+
     <div class="pantalla-carga" id="pantallaCarga">
         <div class="carga-contenido">
             <div class="loader"></div>
@@ -96,6 +20,7 @@
 
     <!-- Contenido principal de la página -->
     <div class="contenido-principal" id="contenidoPrincipal">
+        <img src="./img/LogoC.png" alt="Wisero">
         <div class="contenido-interno">
             <h1>Bienvenido a la WiserPage</h1>
             <p>Aqui veras blablablababl</p>
