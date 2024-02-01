@@ -4,7 +4,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #282c35;
     color: #ffffff;
-    overflow: hidden; /* Evita el desplazamiento durante la carga */
 }
 
 .loader {
@@ -29,6 +28,8 @@ body {
 }
 
 .profile-img {
+    border-color: #3d4655;
+    background-color: #4f5d74;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -63,4 +64,49 @@ h1 {
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+.projects {
+    padding: 10px 0;
+    background-color: #37404d;
+    margin: 60px;
+    border-radius: 30px;
+}
+
+.titulopro {
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #4f5d74;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+.project-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #b0b0b0;
 }
