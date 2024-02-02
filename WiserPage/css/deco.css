@@ -72,7 +72,7 @@ h1 {
 
 .redes {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #3f5477;
     color: #ffffff;
     text-decoration: none;
@@ -80,13 +80,34 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding-left: 50px;
+}
 
+/* Estilo para el primer botón */
+.redes.github {
+    background-image: url('../img/github.png'); /* Ruta de la imagen de GitHub */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: left center; /* Coloca la imagen a la izquierda del texto */
+    background-size: 34px;
+    transition: background-size 0.5s ease;
+    
+}
+
+.redes.insta {
+    background-image: url("../img/insta.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 31px;
 }
 
 .redes:hover {
     background-color: #3367d6;
 }
 
+.redes.github:hover {
+    background-size: 40px;
+
+}
 a {
     text-decoration: none; /* Elimina el subrayado */
     color: inherit; /* Usa el color heredado para los enlaces */
@@ -101,6 +122,7 @@ h2 {
     background-color: #37404d;
     margin: 60px;
     border-radius: 30px;
+    box-shadow: 0 0 40px black;
 }
 
 .titulopro {
@@ -114,7 +136,6 @@ h2 {
     background-color: #4f5d74;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
 }
 
