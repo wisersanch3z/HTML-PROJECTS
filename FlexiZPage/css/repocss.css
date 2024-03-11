@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right,#1a1d1f, #24282e); /*COLORES OG #2c353b | #434f64*/
+    color:aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+:root{
+    --colorBorde: #518cad;
+    --colorBorde2: #1f2b3d;
+
+    --colorFondo1: #33435a;
+    --colorFondo2: #25354d;
+}
+
+
+.inicio {
+
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.titulo {
+    background: linear-gradient(to right, #3a5664, #333c4b);
+    text-align: center;
+    align-items: center;
+    padding: 0.4rem;
+    max-height: 90px;
+    max-width: 20rem;
+    border-radius: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desc {
+    background: linear-gradient(to right, #3a5664, #333c4b);
+    text-align: center;
+    align-items: center;
+    padding: 0.4rem;
+    max-height: 50rem;
+    max-width: 55rem;
+    border-radius: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+summary {
+    background-color: #1f2b3d;
+}
+
+details[open] {
+    background-color: #d4edda; /* Cambiar el color de fondo cuando está desplegado */
+}
+/*
+*/
