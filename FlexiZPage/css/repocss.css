@@ -2,7 +2,10 @@ body {
     margin: 0;
     background: linear-gradient(to right,#1a1d1f, #24282e); /*COLORES OG #2c353b | #434f64*/
     color:aliceblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow:visible;
+
+
 }
 
 :root{
@@ -47,12 +50,75 @@ body {
     font-size: 15px;
 }
 
+.repo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.periodouno {
+    width: 20rem;
+
+ 
+}
 summary {
-    background-color: #1f2b3d;
+    width: 10rem;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+  }
+  
+  details > ul {
+    list-style:decimal;
+
+    
+    display: none;
+  }
+  
+  details[open] > ul {
+
+    display: block;
+  }
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
-details[open] {
-    background-color: #d4edda; /* Cambiar el color de fondo cuando está desplegado */
-}
+ li {
+    text-align: center;
+    border-radius: 5rem;
+    background-color: rgb(40, 92, 40);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+ }
+  .periodouno[open] summary{
+    transition: background-color 0.9s ease;
+    background-color: rgb(69, 94, 139);
+  }
+  .info[open] summary {
+    transition: background-color 0.9s ease;
+    background-color: rgb(62, 125, 150);
+  }
+  .social[open] summary {
+    transition: background-color 0.9s ease;
+    background-color: rgb(116, 127, 223);
+  }
+  .ciencia[open] summary {
+    transition: background-color 0.9s ease;
+    background-color: rgb(38, 117, 35);
+  }
+  .mate[open] summary {
+    transition: background-color 0.9s ease;
+    background-color: rgb(182, 67, 67);
+  }
+  .lengua[open] summary {
+    transition: background-color 0.9s ease;
+    background-color: rgb(158, 151, 54);
+  }
+ 
 /*
 */
