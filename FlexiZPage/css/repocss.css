@@ -120,5 +120,15 @@ a {
     background-color: rgb(158, 151, 54);
   }
  
+  .foo {
+   
+    background-color: #232a35;
+    color: #9db7c4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 22rem;
+    text-align: center;
+    display:flow-root;
+  }
+  
 /*
 */
