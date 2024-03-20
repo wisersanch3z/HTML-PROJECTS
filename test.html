@@ -114,9 +114,17 @@ button[type="submit"]:hover {
         const nombre = document.getElementById('nombre').value;
         const mensaje = document.getElementById('mensaje').value;
 
-        const webhookURL = 'https://discord.com/api/webhooks/1220119879697436743/1dVxV5JKd1hVWEQSwWdLFAcUqxWrHsUDRtXzsNyRZXRxSDby3UsV-AY2IS0NWMnljNBz'; // Reemplaza con la URL de tu webhook de Discord
+        const webhookURL ="https://discord.com/api/webhooks/1220137022962798694/IBw0ZB7_svDtHjAMw8yci6OBmT_6Vr-tOlo5KmbQUyI7ugysg_C9hxEuAutV0GBijOKK"; // Reemplaza con la URL de tu webhook de Discord
         const payload = {
-          content: `**Nombre:** ${nombre}\n**Mensaje:** ${mensaje}`
+            
+            embeds: [{
+        title: 'Nuevo entrante desde el formulario:',
+        fields: [
+          { name: 'Nombre:', value: nombre, inline: true },
+          {name: "Mensaje", value: mensaje, inline: true}
+        ],
+        color: 0x00ff00 // Color del embed (en hexadecimal)
+      }]
         };
 
         try {
