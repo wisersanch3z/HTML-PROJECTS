@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar mensaje a Discord</title>
+</head>
+<body>
+
+    <style>
+   body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #363636;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#agradecimiento {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #282828;
+  color: #ffffff;
+  border-radius: 5px;
+  z-index: 1000;
+  animation: mostrarAgradecimiento 0.5s ease forwards;
+}
+
+#agradecimiento::before {
+  content: "\1F603"; /* Emoticono de cara sonriente */
+  margin-right: 10px;
+}
+
+@keyframes mostrarAgradecimiento {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
+
+
+
+    </style>
+  <form id="miFormulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea><br>
+    <button type="submit">Enviar mensaje a Discord</button>
+  </form>
+
+  <div id="agradecimiento" style="display: none;">
+    Gracias por llenar el formulario. Serás redirigido a Discord en 5 segundos.
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('miFormulario');
+      const agradecimiento = document.getElementById('agradecimiento');
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const nombre = document.getElementById('nombre').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        const webhookURL = 'https://discord.com/api/webhooks/1220119879697436743/1dVxV5JKd1hVWEQSwWdLFAcUqxWrHsUDRtXzsNyRZXRxSDby3UsV-AY2IS0NWMnljNBz'; // Reemplaza con la URL de tu webhook de Discord
+        const payload = {
+          content: `**Nombre:** ${nombre}\n**Mensaje:** ${mensaje}`
+        };
+
+        try {
+          const response = await fetch(webhookURL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+          });
+
+          if (response.ok) {
+            // Mostrar mensaje de agradecimiento
+            form.style.display = 'none';
+            agradecimiento.style.display = 'block';
+
+            // Redireccionar al usuario a la invitación de Discord después de 5 segundos
+            setTimeout(() => {
+              window.location.href = 'https://discord.gg/CMreY7mC'; // Reemplaza con tu enlace de invitación de Discord
+            }, 5000);
+          } else {
+            throw new Error('Error al enviar el mensaje a Discord');
+          }
+        } catch (error) {
+          console.error(error);
+          alert('Hubo un error al enviar el mensaje a Discord');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -15,26 +15,6 @@ body {
     
 }
 
-.loader {
-    width: 100%;
-    height: 100vh;
-    background-color: #222e3a;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 24px;
-    opacity: 1;
-    transition: opacity 1.3s ease-in-out;
-}
-
-.content {
-    display: none;
-}
 
 .profile-img {
     border-color: #3d4655;
