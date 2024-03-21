@@ -1,16 +1,13 @@
 let downloadss = 0; // Variable global para almacenar el número de descargas
 
 function trackDownload(file) {
-    // Incrementa el contador de descargas
-    incrementDownloadCounter();
 
-    // Envía el mensaje a Discord
+    incrementDownloadCounter();
     sendMessageToDiscord(file);
 }
 
 function incrementDownloadCounter() {
-    // Se podría implementar un sistema de almacenamiento persistente aquí, como cookies o localStorage,
-    // para mantener un registro del número de descargas. En este ejemplo, simplemente mostraremos el contador en la consola.
+  
     downloadss++;
     console.log('Número de descargas: ' + downloadss);
 }
