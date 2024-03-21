@@ -12,9 +12,31 @@ function incrementDownloadCounter() {
     console.log('Número de descargas: ' + downloadss);
 }
       function sendMessageToDiscord(file) {
+        
+        const deviceInfo = {
+            userAgent: navigator.userAgent,
+            screenWidth: window.screen.width,
+            screenHeight: window.screen.height,
+            browserLanguage: navigator.language,
+            platform: navigator.platform
+        }
           const webhookURL = 'https://discord.com/api/webhooks/1220220455085019166/gNeNskPKIrFIuTdiWf1QMkTRvUMlu3CR4YoeQuYQdVE5xzzncl89TWMrHoEA87KkBK6O';
           const payload = {
-              content: `Se ha descargado el archivo "${file}" desde **El Repositorio.** \nSe han realizado \`${downloadss}\` descargas desde que la pagina esta activa`
+            embeds: [
+                {
+                    author: {
+                        name: "Nueva Descarga"
+                    },
+                    description: `Se ha descargado el archivo "${file}" desde **El Repositorio.** \nSe han realizado \`${downloadss}\` descargas desde que la pagina esta activa`,
+                    fields:[
+                        { name: `Navegador:`, value: deviceInfo.userAgent },
+                        { name: `Resolución Dispositivo`, value: `${deviceInfo.screenWidth}x${deviceInfo.screenHeight}` },
+                        { name: `Idioma del Navegador`, value: deviceInfo.browserLanguage },
+                        { name: `Plataforma`, value: deviceInfo.platform }
+                    ]
+                }
+            ]
+
           };
 
           fetch(webhookURL, {
