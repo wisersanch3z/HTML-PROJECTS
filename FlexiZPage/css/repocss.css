@@ -81,10 +81,11 @@ summary {
     list-style:decimal;
     display: none;
 
+
   }
   
   details[open] > ul {
-    margin-left: 2rem;
+    margin-left: 4.30rem;
     display: block;
     
   }
@@ -94,11 +95,12 @@ a {
 }
 
  li {
-  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.30rem;
     text-align: center;
-    border-radius: 5rem;
+    border-radius: 1rem;
     background-color: rgb(40, 92, 40);
-    margin-left: 1rem;
+    margin-left: -7rem;
     margin-bottom: 1rem;
  }
   .periodouno[open] summary{
@@ -124,6 +126,10 @@ a {
   .lengua[open] summary {
     transition: background-color 0.9s ease;
     background-color: rgb(158, 151, 54);
+  }
+  .modulo[open] summary {
+    transition: background-color 0.9s ease;
+    background-color: rgb(66, 128, 243);
   }
  
   .foo {
