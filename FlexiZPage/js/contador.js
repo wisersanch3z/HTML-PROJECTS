@@ -14,7 +14,7 @@ function incrementDownloadCounter() {
       function sendMessageToDiscord(file) {
           const webhookURL = 'https://discord.com/api/webhooks/1220220455085019166/gNeNskPKIrFIuTdiWf1QMkTRvUMlu3CR4YoeQuYQdVE5xzzncl89TWMrHoEA87KkBK6O';
           const payload = {
-              content: `Se ha descargado el archivo "${file}" desde **El Repositorio.** \nSe han realizado \`${downloadss}\` desde que la pagina esta activa`
+              content: `Se ha descargado el archivo "${file}" desde **El Repositorio.** \nSe han realizado \`${downloadss}\` descargas desde que la pagina esta activa`
           };
 
           fetch(webhookURL, {
