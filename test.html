@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Flexiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* Estilos generales */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* Estilos para el header */
+
+header {
+  background: linear-gradient(45deg, #0073b7, #00c49f);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la sección del equipo */
+
+#equipo {
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.miembros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.miembro {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.miembro:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.miembro img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.miembro h3 {
+  color: #0073b7;
+}
+
+.miembro p {
+  color: #666;
+}
+
+/* Estilos para la sección de proyectos */
+
+#proyectos {
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.proyecto {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.proyecto h3 {
+  color: #00c49f;
+}
+
+.proyecto p {
+  color: #666;
+}
+
+.proyecto a {
+  color: #0073b7;
+  font-weight: bold;
+}
+
+/* Estilos para el footer */
+
+footer {
+  background-color: #0073b7;
+  color: #fff
+}
+    </style>
+    <header>
+        <h1>Flexiz</h1>
+        <h2>Equipo de Desarrollo</h2>
+    </header>
+    <main>
+        <section id="equipo">
+            <h2>Conoce al equipo</h2>
+            <div class="miembros">
+                <div class="miembro">
+                    <img src="./WiserPage/img/LogoS.png" alt="Miembro 1">
+                    <h3>César</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="miembro">
+                    <img src="img/miembro2.jpg" alt="Miembro 2">
+                    <h3>Nombre 2</h3>
+                    <p>Cargo 2</p>
+                </div>
+                
+                </div>
+        </section>
+        <section id="proyectos">
+            <h2>Nuestros proyectos</h2>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Nombre del proyecto 1</h3>
+                    <p>Descripción del proyecto 1</p>
+                    <a href="#">Ver más</a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                    <h3>Nombre del proyecto 2</h3>
+                    <p>Descripción del proyecto 2</p>
+                    <a href="#">Ver más</a>
+                </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 Flexiz</p>
+        <a href="#">Contacto</a>
+    </footer>
+</body>
+</html>
