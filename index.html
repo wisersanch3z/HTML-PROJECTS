@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Archivos -  ERDSA</title>
+
+</head>
+<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 800px;
+    max-width: 90%;
+}
+
+.form-container, .instructions-container {
+    width: 50%;
+    padding: 20px;
+}
+
+h2 {
+    color: #1f4e79;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1f4e79;
+}
+
+input, select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #1f4e79;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f4e79;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163d59;
+}
+
+.instructions-container p {
+    line-height: 1.6;
+    color: #555;
+}
+
+    </style>
+    <div class="container">
+        <div class="form-container">
+            <form id="uploadForm">
+                <h2>Subir Archivo</h2>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="nombreMateria">Nombre de la materia:</label>
+                <input type="text" id="nombreMateria" name="nombreMateria" required>
+
+                <label for="fechaDejo">Fecha que lo dejó:</label>
+                <input type="date" id="fechaDejo" name="fechaDejo" required>
+
+                <label for="fechaEntrega">Fecha de entrega:</label>
+                <input type="date" id="fechaEntrega" name="fechaEntrega" required>
+
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="tarea">Tarea</option>
+                    <option value="exposicion">Exposición</option>
+                </select>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="archivo">Archivo:</label>
+                <input type="file" id="archivo" name="archivo" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="instructions-container">
+            <h2>¿Por qué?</h2>
+            <p>Debido a la nueva apertura del mejorado "El Repositorio", pasadia a llamarse "El Rincon de la DSA"
+                con nuevas caracteristicas y mejor organización para recopilar archivos, tareas y exposiciones durante nuestros 3 años de estudios
+                
+            </p>
+            <h2>Instrucciones</h2>
+            <p>Asegúrate de llenar todos los campos antes de enviar el formulario.
+                Sube un archivo válido y proporciona información precisa para cada campo.
+                 La información será enviada a nuestro <a href="https://discord.gg/QG9K2TEzTp"></a>Discord.<br>
+                Los datos seran procesados y enviaremos un mensaje a tu correo permitiendote saber si tu aporte fue aceptado por nuestro sistema.
+               </p>
+               <h4> <span style="color: rgb(16, 110, 40);">Nuestra ayuda depende de tu disposición a colaborar.</span></h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
