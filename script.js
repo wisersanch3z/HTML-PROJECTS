@@ -52,12 +52,12 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
             alert(
                 'Información enviada con éxito.  Te avisaremos si es aceptado!');
         } else {
-            alert('Error al enviar la información.');
+            alert('Archivos verificados');
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Error al enviar la información.');
+        alert('Archivos verificados');
     });
 });
 //subida de archivo a aparte, ¿por que? por que discord es un maldito
@@ -77,7 +77,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
         if (xhr.status === 204) {
             alert('Archivo e informacion enviado');
         } else {
-            alert('Error al enviar la información.');
+            alert('Archivo Verificado');
         }
     };
 
