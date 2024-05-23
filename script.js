@@ -2,10 +2,11 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
     event.preventDefault();
 
     const nombre = document.getElementById('nombre').value;
-    const nombreMateria = document.getElementById('nombreMateria').value;
+    const materia = document.getElementById('materia').value;
     const fechaDejo = document.getElementById('fechaDejo').value;
     const fechaEntrega = document.getElementById('fechaEntrega').value;
     const tipo = document.getElementById('tipo').value;
+    const periodo = document.getElementById('periodo').value;
     const correo = document.getElementById('correo').value;
     const archivo = document.getElementById('archivo').files[0];
 
@@ -15,10 +16,11 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
         title: "Nuevo Archivo Subido",
         color: 7506394, 
         fields: [
-            { name: "Nombre", value: nombre, inline: false },
-            { name: "Nombre Materia", value: nombreMateria, inline: false },
-            { name: "Fecha que lo dejó", value: fechaDejo, inline: false },
-            { name: "Fecha de entrega", value: fechaEntrega, inline: false },
+            { name: "Nombre Aportador", value: nombre, inline: false },
+            { name: "Materia", value: materia, inline: false },
+            { name: "Periodo", value: periodo, inline: true },
+            { name: "Fecha que lo dejó", value: fechaDejo, inline: true },
+            { name: "Fecha de entrega", value: fechaEntrega, inline: true },
             { name: "Tipo", value: tipo, inline: false },
             { name: "Correo", value: correo, inline: true }
      
