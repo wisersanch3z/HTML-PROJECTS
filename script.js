@@ -13,7 +13,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
 
     const embed = {
         title: "Nuevo Archivo Subido",
-        color: 7506394,  // Color en decimal (0x72A0C1 en hexadecimal)
+        color: 7506394, 
         fields: [
             { name: "Nombre", value: nombre, inline: false },
             { name: "Nombre Materia", value: nombreMateria, inline: false },
@@ -58,7 +58,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
         alert('Error al enviar la información.');
     });
 });
-
+//subida de archivo a aparte, ¿por que? por que discord es un maldito
 document.getElementById('uploadForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -66,7 +66,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
 
     const webhookUrl = 'https://discord.com/api/webhooks/1243028360616214588/p3a88uz4v9kKPvBkSre4lymhXpkEBLDzaPdtz-3pWf2T9IegWQxU1yL-yOmDkpLC5BMi';
 
-    // Crear un objeto XMLHttpRequest
+   
     const xhr = new XMLHttpRequest();
     xhr.open("POST", webhookUrl, true);
     xhr.setRequestHeader('Accept', 'application/json');
