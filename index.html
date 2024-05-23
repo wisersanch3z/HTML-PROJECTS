@@ -78,24 +78,31 @@ button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  
     body {
-        font-size: 14px;
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
-  
-  .form-container {
-    max-width: 450px; /* Ancho máximo del formulario */
+            .form-container, .instru {
+                width: 100%;
+            }
 
-
-  }
-
-}
+    .rdsa {
+        font-size: 20px;
+    }
+    .instru h2{
+        font-size: 20px;
+    }
+    .instru p {
+        font-size: 13px;
+    }
+        }
 
     </style>
+    
     <div class="container">
+        
         <div class="form-container">
-            <h1>¡El Rincon de la DSA te necesita!</h1>
+           
+          
             <form id="uploadForm">
                 <h2>Subir Archivo</h2>
                 
@@ -127,6 +134,7 @@ button:hover {
             </form>
         </div>
         <div class="instru">
+            <h1 class="rdsa">¡El Rincon de la DSA te necesita!</h1>
             <h2>¿Por qué?</h2>
             <p>Debido a la nueva apertura del mejorado "El Repositorio", pasaria a llamarse "El Rincon de la DSA"
                 con nuevas caracteristicas y mejor organización para recopilar archivos, tareas y exposiciones durante nuestros 3 años de estudios

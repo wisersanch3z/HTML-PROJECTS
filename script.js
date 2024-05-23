@@ -79,9 +79,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
         }
     };
 
-    xhr.onerror = function () {
-        alert('Error al enviar la información.');
-    };
+ 
 
     // Enviar el FormData
     xhr.send(formData);
